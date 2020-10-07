@@ -2,7 +2,6 @@
   position: relative;
   overflow-x: hidden;
 
-
   section {
     scroll-snap-align: start;
     align-items: center;
@@ -12,7 +11,7 @@
 
     &.landing {
       background-color: black;
-      background-image: url("../img/landing.png");
+      background-image: url('../img/landing.png');
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -62,7 +61,7 @@
       height: 100vh;
       padding: 3rem;
       overflow: hidden;
-      background-image: url("../img/teddy.png");
+      background-image: url('../img/teddy.png');
       background-position: 0% 100%;
       background-size: auto;
       background-repeat: no-repeat;
@@ -111,7 +110,6 @@
     }
   }
 }
-
 
 @media (max-width: 800px) {
   .home section.landing {
@@ -207,7 +205,7 @@
   max-height: max-content;
   padding: 3rem;
   background-color: #9fb5cb;
-  background-image: url("../img/rv.png");
+  background-image: url('../img/rv.png');
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -264,35 +262,35 @@
         }
 
         &#name {
-          background-image: url("../img/icon_user.png");
+          background-image: url('../img/icon_user.png');
           background-position: 1.25rem center;
           background-size: auto 1rem;
           background-repeat: no-repeat;
         }
 
         &#username {
-          background-image: url("../img/icon_CC.png");
+          background-image: url('../img/icon_CC.png');
           background-position: 1.25rem center;
           background-size: auto 1rem;
           background-repeat: no-repeat;
         }
 
         &#phone {
-          background-image: url("../img/icon_phone.png");
+          background-image: url('../img/icon_phone.png');
           background-position: 1.25rem center;
           background-size: auto 1rem;
           background-repeat: no-repeat;
         }
 
         &#country {
-          background-image: url("../img/icon_globe.png");
+          background-image: url('../img/icon_globe.png');
           background-position: 1.25rem center;
           background-size: auto 1rem;
           background-repeat: no-repeat;
         }
 
         &#uni {
-          background-image: url("../img/icon_uni.png");
+          background-image: url('../img/icon_uni.png');
           background-position: 1.25rem center;
           background-size: auto 1rem;
           background-repeat: no-repeat;
@@ -301,17 +299,17 @@
 
       .select {
         display: grid;
-        grid-template-areas: "select";
+        grid-template-areas: 'select';
         align-items: center;
 
         &::after {
-          content: "";
+          content: '';
           margin-right: 1rem;
           grid-area: select;
           justify-self: end;
           width: 0.8em;
           height: 0.5em;
-          z-index: 999;
+          z-index: 900;
           background-color: rgb(155, 155, 155);
           clip-path: polygon(100% 0%, 0 0%, 50% 100%);
         }
@@ -331,7 +329,7 @@
           color: #777777;
           margin: 0.3rem 0;
 
-          background-image: url("../img/icon_globe.png");
+          background-image: url('../img/icon_globe.png');
           background-position: 1.25rem center;
           background-size: auto 1rem;
           background-repeat: no-repeat;
@@ -381,6 +379,7 @@
     align-items: center;
 
     .form-container {
+      border-radius: 20px;
       padding: 1.75rem 1.5rem;
       width: fit-content;
       font-size: 0.9rem;

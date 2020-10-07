@@ -4,7 +4,7 @@
   background-color: rgb(44, 29, 6);
   background-image: url('../img/hof.png');
   background-attachment: fixed;
-  background-position: 50% 20px;
+  background-position: 50% 2.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   height: 96vh;
@@ -168,28 +168,31 @@
 }
 
 @media (max-width: 500px) {
-  .halloffame .cont {
-    &.india,
-    &.world,
-    &.iiitp {
-      margin-bottom: 1rem;
-    }
-
-    &.world {
-      margin-top: 3rem;
-    }
-
-    .winner {
-      grid-template-columns: 4rem auto;
-
-      .profile {
-        width: 5rem;
-        height: 5rem;
+  .halloffame {
+    background-position: 50% -5px;
+    .cont {
+      &.india,
+      &.world,
+      &.iiitp {
+        margin-bottom: 1rem;
       }
 
-      .social {
-        visibility: visible !important;
-        opacity: 1;
+      &.world {
+        margin-top: 3rem;
+      }
+
+      .winner {
+        grid-template-columns: 4rem auto;
+
+        .profile {
+          width: 5rem;
+          height: 5rem;
+        }
+
+        .social {
+          visibility: visible !important;
+          opacity: 1;
+        }
       }
     }
   }
