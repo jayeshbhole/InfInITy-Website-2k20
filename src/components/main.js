@@ -12,6 +12,10 @@ import Ourteam from './Ourteam';
 
 class Main extends Component {
   render() {
+    const ShowwithId = ({ match }) => {
+      let quesid = match.params.code;
+      return <Previously code={quesid} />;
+    };
     return (
       <div>
         <Switch location={this.props.location}>
@@ -24,6 +28,7 @@ class Main extends Component {
           />
           <Route exact path='/halloffame' component={() => <Hall />} />
           <Route exact path='/example' component={() => <FeedbackModal />} />
+          <Route exact path='/questions/:code' component={ShowwithId} />
           <Route exact path='/' component={() => <Home />} />
           <Route exact path='/quescard' component={() => <QuesCard />} />
           <Redirect to='/' />
